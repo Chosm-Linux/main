@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About · Chosm Linux</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Chosm Linux">
+
+  <style>
+    :root {
+      --bg: #0b0b10;
+      --panel: #12121a;
+      --text: #e8e8f0;
+      --muted: #a0a0b5;
+      --purple: #8b5cf6;
+      --purple-dark: #6d28d9;
+      --border: #1f1f2e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #141427, var(--bg));
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 28px 40px;
+      background: transparent;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-wrap {
+      background: rgba(18, 18, 26, 0.85);
+      padding: 6px 10px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .logo {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    main {
+      flex: 1;
+      padding: 60px 40px;
+      max-width: 1100px;
+      width: 100%;
+      margin: auto;
+    }
+
+    /* INFO LAYOUT */
+    .info-box {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+      box-shadow: 0 0 40px rgba(139, 92, 246, 0.12);
+    }
+
+    .info-text h2 {
+      margin-top: 0;
+      font-size: 32px;
+    }
+
+    .info-text p {
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+
+    .info-list {
+      margin-top: 24px;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .info-list li {
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+      color: var(--text);
+    }
+
+    .info-list li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: var(--purple);
+    }
+
+    .info-image {
+      background: #0c0c14;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px;
+    }
+
+    .info-image img {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+    }
+        .tool-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 16px;
+    }
+
+    .tool-list li {
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+      color: var(--text);
+    }
+
+    .tool-list li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: var(--purple);
+    }
+
+
+    footer {
+      padding: 22px;
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+      border-top: 1px solid var(--border);
+      background: #0a0a12;
+    }
+
+    footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* MOBILE */
+    @media (max-width: 900px) {
+      .info-box {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo-wrap">
+      <img src="logo.png" class="logo" alt="Chosm Linux">
+    </div>
+    <h1>Chosm Linux</h1>
+  </div>
+</header>
+
+<main>
+  <section class="info-box">
+    <!-- SOL: BİLGİ -->
+    <div class="info-text">
+      <h2>About Chosm Linux</h2>
+      <p>
+        Chosm Linux is a lightweight, Debian-based indie Linux distribution designed
+        for cyber security professionals, learners, and enthusiasts.
+      </p>
+      <p>
+        It focuses on speed, simplicity, and a clean environment while providing
+        essential tools for penetration testing and system analysis.
+      </p>
+      <p>
+        Chosm Linux comes with a carefully selected set of security and penetration
+        testing tools, pre-installed and pre-configured for immediate use.
+        The toolkit focuses on network analysis, passive information collecting
+        wireless security, etc. while keeping the system
+        lightweight and responsive.
+      </p>
+      <p>Some tools that come pre-installed in Chosm Linux:
+        Nmap,
+        Hydra,
+        Aircrack-ng,
+        Gobuster,
+        Netcat,
+        Wireshark,
+        Ghidra,
+        Arpspoof,
+        Proxychains,
+        Bettercap/Ettercap,
+        Sqlmap,
+        Hashcat,
+        John The Ripper
+      </p>
+      <div class="credentials-box">
+        <h3>Default Login Credentials</h3>
+        <p>
+          Chosm Linux is provided with default credentials for initial access.
+          It is strongly recommended to change the password after first login.
+        </p>
+
+        <ul class="credentials-list">
+          <li><strong>Username:</strong> chosm</li>
+          <li><strong>Password:</strong> root</li>
+        </ul>
+      </div>
+
+
+
+      <p style="color: var(--muted); font-size: 14px;">
+        Additional tools can be installed easily using the Debian package manager.
+      </p>
+
+      <ul class="info-list">
+        <li>Debian Stable base</li>
+        <li>Lightweight & fast desktop</li>
+        <li>Pre-installed security tools</li>
+        <li>LXQt desktop environment</li>
+        <li>LightDM display manager</li>
+        <li>Optimized for VirtualBox</li>
+        <li>Open-source (GPL v3)</li>
+      </ul>
+    </div>
+
+
+    <div class="info-image">
+      <img src="screenshot.png" alt="Chosm Linux Desktop Screenshot">
+      <img src="screenshot2.png" alt="Chosm Linux Desktop Screenshot2">
+      <img src="screenshot3.png" alt="Chosm Linux Desktop Screenshot3">
+      <img src="screenshot4.png" alt="Chosm Linux Desktop Screenshot4">
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>
+    © 2026 Chosm-Linux<br>
+    Licensed under the
+    <a href="LICENSE" target="_blank">
+      GNU General Public License v3.0
+    </a>.
+  </p>
+  <p>
+    Debian is a registered trademark of Software in the Public Interest, Inc.<br>
+    Chosm-Linux is not affiliated with or endorsed by the Debian Project.
+  </p>
+</footer>
+
+</body>
+</html>

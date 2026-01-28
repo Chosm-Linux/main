@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chosm Linux</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Chosm Linux">
+
+  <style>
+    :root {
+      --bg: #0b0b10;
+      --panel: #12121a;
+      --text: #e8e8f0;
+      --muted: #a0a0b5;
+      --purple: #8b5cf6;
+      --purple-dark: #6d28d9;
+      --border: #1f1f2e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #141427, var(--bg));
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 28px 40px;
+      background: transparent;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .header-spacer {
+      flex: 1;
+    }
+
+    .logo-wrap {
+      background: rgba(18, 18, 26, 0.85);
+      padding: 6px 10px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 0.5px;
+    }
+
+    .about-btn {
+      padding: 10px 22px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(18, 18, 26, 0.85);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+    }
+
+    .about-btn:hover {
+      background: rgba(30, 30, 45, 0.95);
+      box-shadow: 0 0 18px rgba(139, 92, 246, 0.45);
+      transform: translateY(-2px) scale(1.03);
+    }
+
+
+    main {
+      flex: 1;
+      padding: 60px 40px;
+      max-width: 1000px;
+      width: 100%;
+      margin: auto;
+    }
+
+    .hero {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 48px;
+      text-align: center;
+      box-shadow: 0 0 40px rgba(139, 92, 246, 0.15);
+    }
+
+    .hero h2 {
+      margin-top: 0;
+      font-size: 34px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 16px auto 32px;
+      font-size: 16px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 14px 32px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(135deg, var(--purple), var(--purple-dark));
+      border-radius: 999px;
+      text-decoration: none;
+      box-shadow: 0 0 25px rgba(139, 92, 246, 0.5);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 35px rgba(139, 92, 246, 0.8);
+    }
+
+    footer {
+      padding: 22px;
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+      border-top: 1px solid var(--border);
+      background: #0a0a12;
+    }
+
+    footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <img src="logo.png" alt="Chosm Linux Logo" class="logo">
+      </div>
+
+      <h1>Chosm Linux</h1>
+
+      <div class="header-spacer"></div>
+
+      <a href="about.html" class="about-btn">About</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Free, Fast, Modern</h2>
+      <p>
+        Chosm Linux is an open-source, Debian-based lightweight Linux distribution focused on cyber security.
+      </p>
+
+      <a href="https://drive.google.com/file/d/1YKDd9cBZMFj7SzMoeGRiC9KUNTv8XjRl/view" class="download-btn" download>
+        Download OVA
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © 2026 Chosm-Linux<br>
+      Licensed under the
+      <a href="LICENSE" target="_blank">
+        GNU General Public License v3.0
+      </a>.
+    </p>
+    <p>
+      Debian is a registered trademark of Software in the Public Interest, Inc.<br>
+      Chosm-Linux is not affiliated with or endorsed by the Debian Project.
+    </p>
+  </footer>
+
+</body>
+</html>
